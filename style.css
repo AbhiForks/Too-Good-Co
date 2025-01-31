@@ -16,7 +16,7 @@
 }
 
 *::selection {
-    color: white;
+    color: #CDC1FF;
     background-color: black;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 body {
-    background-color: #F7F7F7;
+    background-color: #F3D7CA;
 }
 
 #nav {
