@@ -1,3 +1,4 @@
+/* Define custom fonts */
 @font-face {
     font-family: futura;
     src: url(./Futura-Bold.ttf);
@@ -8,6 +9,7 @@
     src: url(./HelveticaNowText-Regular.ttf);
 }
 
+/* Reset some default browser styles and set default font */
 * {
     margin: 0;
     padding: 0;
@@ -15,24 +17,27 @@
     font-family: 'Helvetica';
 }
 
+/* Style text selection */
 *::selection {
     color: #CDC1FF;
     background-color: black;
 }
 
+/* Set dimensions for html and body */
 html,
 body {
     height: 100%;
     width: 100%;
 }
 
+/* Set background color for body */
 body {
     background-color: #F3D7CA;
 }
 
+/* Navigation bar styles */
 #nav {
     width: 100%;
-    /* background-color: burlywood; */
     position: fixed;
     z-index: 99;
     padding: 25px;
@@ -42,7 +47,6 @@ body {
 }
 
 #nav-part1 {
-    /* background: red; */
     height: 82px;
     overflow: hidden;
 }
@@ -83,6 +87,7 @@ body {
     font-weight: 100;
 }
 
+/* Cursor styles */
 #cursor {
     height: 200px;
     width: 200px;
@@ -93,6 +98,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* Page 1 styles */
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -109,10 +115,10 @@ body {
     letter-spacing: -8px;
 }
 
+/* Video container styles */
 #video-container {
     height: 100vh;
     width: 100%;
-    /* background-color: gray; */
     margin-top: 1vw;
     position: relative;
 }
@@ -136,6 +142,7 @@ body {
     scale: 0;
 }
 
+/* Page 2 styles */
 #page2 {
     min-height: 100vh;
     width: 100%;
@@ -149,7 +156,6 @@ body {
 #page2 .elem {
     height: 100%;
     width: 31%;
-    /* background-color: red; */
     overflow: hidden;
     position: relative;
     display: flex;
@@ -164,14 +170,13 @@ body {
     scale: 1.1;
 }
 
-#page2 .elem .dets{
+#page2 .elem .dets {
     position: absolute;
-    /* transform: translate(-50%, -50%) ; */
     will-change: transform;
     opacity: 1;
 }
 
-#page2 .elem .dets .dets-info{
+#page2 .elem .dets .dets-info {
     background-color: #f5dfcf;
     padding: 0 32px;
     width: 303px;
@@ -180,10 +185,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.dets .container{
+.dets .container {
     background-color: #f5dfcf;
     position: absolute;
     top: 0px;
@@ -198,34 +202,34 @@ body {
     will-change: height;
 }
 
-#page2 .elem .dets .container .listing{
+#page2 .elem .dets .container .listing {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.container .listing .list-elem img{
+.container .listing .list-elem img {
     height: 118px;
     margin-top: 20px;
     margin-bottom: 6px;
 }
 
-#duobook{
+#duobook {
     transform: scale(1.4);
     margin-bottom: 41px;
 }
 
-.container .listing .list-elem p{
+.container .listing .list-elem p {
     font-size: 12px;
     margin: 10px 10px;
     text-align: center;
 }
 
-.elem .dets:hover .container{
-    height: auto ;
+.elem .dets:hover .container {
+    height: auto;
 }
 
-
+/* Moto section styles */
 #moto {
     display: flex;
     justify-content: space-between;
@@ -260,6 +264,7 @@ body {
     text-decoration: underline;
 }
 
+/* Page 3 styles */
 #page3 {
     min-height: 120vh;
     width: 100%;
@@ -273,8 +278,6 @@ body {
 .child {
     height: 54vh;
     width: 38vw;
-    /* background-color: red; */
-    /* border: 2px solid black; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -465,7 +468,6 @@ body {
 @media (max-width: 600px) {
     #nav {
         width: 100%;
-        /* background-color: burlywood; */
         position: fixed;
         z-index: 99;
         padding: 15px;
@@ -475,7 +477,6 @@ body {
     }
 
     #nav-part1 {
-        /* background: red; */
         height: 67px;
         overflow: hidden;
     }
@@ -557,7 +558,6 @@ body {
     #page2 .elem {
         height: 100vh;
         width: 100%;
-        /* background-color: red; */
         overflow: hidden;
         margin-bottom: 3vw;
     }
@@ -599,8 +599,6 @@ body {
     .child {
         height: 20vh;
         width: 38vw;
-        /* background-color: red; */
-        /* border: 2px solid black; */
         position: relative;
         display: flex;
         flex-direction: column;
